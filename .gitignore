@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Models (large files)
+models/*.gguf
+models/*.bin
+
+# Data & Logs
+data/chroma/
+data/redis/
+data/logs/
+*.log
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend
+node_modules/
+frontend/dist/
+frontend/build/
+frontend/src-tauri/target/
+
+# Installer
+installer/output/
+installer/dist/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
