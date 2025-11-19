@@ -236,7 +236,10 @@ class GraphStore:
                 confidence=confidence
             )
             
-            return result.single()["fact_id"]
+            record = result.single()
+            if record:
+                return record["fact_id"]
+            return None
     
     async def link_fact_to_entity(
         self,
